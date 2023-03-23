@@ -3,6 +3,12 @@ function characterCreator(event) {
   const name = document.getElementById("name").value;
   const race = document.getElementById("race").value;
   const strength = document.querySelector("input[name='strength']:checked").value;
+  document.getElementById("fighter").setAttribute("class", "hidden");
+  document.getElementById("wizard").setAttribute("class", "hidden");
+  document.getElementById("ranger").setAttribute("class", "hidden");
+  document.getElementById("druid").setAttribute("class", "hidden");
+  document.getElementById("barbarian").setAttribute("class", "hidden");
+  document.getElementById("shaman").setAttribute("class", "hidden");
   let character;
   if (race === "Human") {
     if (strength === "strong") {
