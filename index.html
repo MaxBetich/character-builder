@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Character Builder</title>
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/scripts.js"></script>
+</head>
+  <h1>Character Creator</h1>
+  <form id="character">
+    <label for="name">What is your character's name?</label>
+    <input id="name" type="text"><br>
+    <label for="race">What is your character's race?</label>
+    <select id="race">
+      <option>Human</option>
+      <option>Elf</option>
+      <option>Orc</option>
+    </select><br>
+    <p>Is your character strong, or smart?</p>
+    <label>
+      <input type="radio" name="strength" value="strong">
+      Strong
+    </label>    
+    <label>
+      <input type="radio" name="strength" value="smart">
+      Smart
+    </label><br>
+    <button type="submit" class="btn">What class should you be?</button>
+  </form>
+  <div id="fighter" class="hidden">
+    <img src="img/fighter.jpg">
+    <h2>Fighter</h2>    
+    <p>Fighters share an unparalleled mastery with weapons and armor, and a thorough knowledge of the skills of combat. They are well acquainted with death, both meting it out and staring it defiantly in the face.</p>
+  </div>
+  <div id="wizard" class="hidden">
+    <img src="img/wizard.jpg">
+    <h2>Wizard</h2>
+    <p>Wizards are supreme magic-users, defined and united as a class by the spells they cast. Drawing on the subtle weave of magic that permeates the cosmos, wizards cast spells of explosive fire, arcing lightning, subtle deception, brute-force mind control, and much more.</p>
+  </div>
+  <div id="ranger" class="hidden">
+    <img src="img/ranger.jpg">
+    <h2>Ranger</h2>
+    <p>Far from the bustle of cities and towns, past the hedges that shelter the most distant farms from the terrors of the wild, amid the dense-packed trees of trackless forests and across wide and empty plains, rangers keep their unending watch.</p>
+  </div>
+  <div id="druid" class="hidden">
+    <img src="img/druid.jpg">
+    <h2>Druid</h2>
+    <p>Whether calling on the elemental forces of nature or emulating the creatures of the animal world, druids are an embodiment of nature's resilience, cunning, and fury. They claim no mastery over nature, but see themselves as extensions of nature's indomitable will.</p>
+  </div>
+  <div id="barbarian" class="hidden">
+    <img src="img/barbarian.jpg">
+    <h2>Barbarian</h2>
+  </div>
+  <p id="output"></p>
+</html>
